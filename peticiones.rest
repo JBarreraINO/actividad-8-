@@ -1,0 +1,32 @@
+//get inmuebles
+GET http://localhost:3000/api/inmuebles
+
+### POST
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+    "piso":"2",
+    "extension":"300",
+    "habitaciones":"3",
+    "alquilado":"false",
+    "propietario ":"andres ",
+    "mail"  :"mail@gmail.com"
+
+}
+
+### PUT
+PUT http://localhost:3000/api/inmuebles/636972eec14b0f02eddc8aac
+Content-Type: application/json
+
+{
+    "piso":"2",
+    "extension":"300",
+    "habitaciones":"3",
+    "alquilado":"false",
+    "propietario ":"andres ",
+    "mail"  :"soy mail actualizado"
+}
+
+### DELETE
+DELETE http://localhost:3000/api/inmuebles/636972eec14b0f02eddc8aac
